@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 100px;
+            width: 200px;
+            background: linear-gradient(45deg,purple,pink,blue);
+            text-align: center;
+            line-height: 100px;
+            margin: 100px auto;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 50px;
+            box-shadow: 0 0 10px black;
+            font-size: 2rem;
+            text-shadow: 5px 5px 10px black,-5px -5px 10px white;
+        }
+        .hover
+        {
+            content: ();
+            height: 100px;
+            width: 100px;
+            clip-path: polygon(60% 0%,100% 0%,40% 100%,0% 100%);
+            background: white;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            z-index: -1;
+            transition: 0.4s;
+        }
+        .main:hover .hover
+        {
+            left: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        Hover
+        <div class="hover"></div>
+    </div>
+</body>
+</html>
