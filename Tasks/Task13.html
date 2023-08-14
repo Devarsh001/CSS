@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background: url(Images//BG-Image.jpg);
+            background-size: cover;
+        }
+        /* .main
+        {
+            height: 200px;
+            width: 200px;
+            background: black;
+            margin: 100px auto;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .effect
+        {
+            height: 10px;
+            width: 10px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transform: scale(0);
+            transition: 1.5s;
+        }
+        .main:hover .effect
+        {
+            transform: translate(-50%,-50%);
+            transform: scale(15);
+        } */
+
+        .main
+        {
+            height: 40px;
+            width: 120px;
+            background: white;
+            margin: 100px auto;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        input
+        {
+            border: none;
+            height: 100%;
+            width: 100%;
+            background: white;
+            font-size: 1vw;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .effect
+        {
+            height: 70px;
+            width: 150px;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            background: transparent;
+            box-sizing: border-box;
+            border: 5px solid white;
+            transform: scale(0);
+            transition: 0.7s;
+            z-index: -1;
+            box-shadow: 0 0 10px black;
+        }
+        .main:hover .effect
+        {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="button" value="Add to cart">
+        <div class="effect"></div>
+    </div>
+</body>
+</html>
