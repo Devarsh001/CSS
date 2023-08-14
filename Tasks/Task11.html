@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 300px;
+            width: 300px;
+            background: url(Images/background-images.jpeg);
+            margin: 200px auto;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .main::after
+        {
+            content: "";
+            height: 300px;
+            width: 300px;
+            background: rgba(124, 107, 107, 0.3);
+            position: absolute;
+            top: 100%;
+            left: -100%;
+            transition: 1s;
+        }
+        .main:hover::after
+        {
+            top: 0;
+            left: 0;
+            right: 100%;
+        }
+
+        .main::before
+        {
+            content: "";
+            height: 300px;
+            width: 300px;
+            background: rgba(124, 107, 107, 0.3);
+            position: absolute;
+            top: -100%;
+            left: 100%;
+            transition: 1s;
+        }
+        .main:hover::before
+        {
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>

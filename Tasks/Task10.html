@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 400px;
+            width: 260px;
+            margin: 200px auto;
+            background: black;
+            position: relative;
+            /* background: url(Images/hmgoepprod.jpeg); */
+            /* background-size: cover; */
+            border: 1px solid navy;
+            line-height: 40px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .img
+        {
+            height: 250px;
+            width: 100%;
+            background: url(Images/hmgoepprod.jpeg);
+            background-size: 90%;
+        }
+        .text
+        {
+            height: 150px;
+            background: white;
+            /* border: 1px solid coral; */
+            text-align: center;
+        }
+        input
+        {
+            background: green;
+            height: 30px;
+        }
+        .main::after
+        {
+            content: "Quick View";
+            text-align: center;
+            line-height: 60px;
+            height: 60px;
+            width: 260px;
+            background: pink;
+            position: absolute;
+            top: -61px;
+            left: 0;
+            transition: 1s;
+        }
+        .main:hover::after
+        {
+            top: 85%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img"></div>
+        <div class="text">
+            <span>Relaxed Jeans - Light denim blue</span><br>
+            <span>$4.99 <del>$9.99</del></span>
+            <div class="button">
+                <input type="button" value="Add To Cart">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
