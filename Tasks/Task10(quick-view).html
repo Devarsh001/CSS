@@ -38,6 +38,13 @@
             background: green;
             height: 30px;
         }
+        .new
+        {
+            position: absolute;
+            right: 0;
+            background: orangered;
+            color: white;
+        }
         .main::after
         {
             content: "Quick View";
@@ -62,7 +69,10 @@
 </head>
 <body>
     <div class="main">
+        <div class="new">NEW</div>
+        
         <div class="img"></div>
+        
         <div class="text">
             <span>Relaxed Jeans - Light denim blue</span><br>
             <span>$4.99 <del>$9.99</del></span>
@@ -70,7 +80,6 @@
                 <input type="button" value="Add To Cart">
             </div>
         </div>
-
     </div>
 </body>
 </html>

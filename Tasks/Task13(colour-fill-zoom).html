@@ -4,36 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body
         {
             background: url(Images/BGTask01.jpeg);
             background-size: 135%;
         }
+        .div
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin-top: 200px;
+        }
         .main
         {
-            height: 200px;
-            width: 200px;
+            height: 100px;
+            width: 100px;
             background: black;
-            margin: 100px auto;
-            /* position: relative; */
+            margin-right: 20px;
+            position: relative;
             box-sizing: border-box;
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: coral;
+            z-index: 1;
         }
         .effect
         {
             height: 10px;
             width: 10px;
             background: white;
-            /* position: absolute;
-            top: 50%;
+            position: absolute;
+            /* top: 50%;
             left: 50%;
             transform: translate(-50%,-50%); */
             transform: scale(0);
             transition: 1s;
+            z-index: -1;
         }
         .main:hover .effect
         {
@@ -43,8 +55,46 @@
     </style>
 </head>
 <body>
-    <div class="main">
-        <div class="effect"></div>
+    <div class="div">
+        <div class="main">
+            <i class="fa fa-user fa-2x"></i>
+            <div class="effect"></div>
+        </div>
+        
+        <div class="main">
+            <i class="fa fa-automobile fa-2x"></i>
+            <div class="effect"></div>
+        </div>
+        
+        <div class="main">
+            <i class="fa fa-plane fa-2x"></i>
+            <div class="effect"></div>
+        </div>
+        
+        <div class="main">
+            <i class="fa fa-mobile fa-2x"></i>
+            <div class="effect"></div>
+        </div>
+        
+        <div class="main">
+            <i class="fa fa-id-card fa-2x"></i>
+            <div class="effect"></div>
+        </div>
+        
+        <div class="main">
+            <i class="fa fa-check-square fa-2x"></i>
+            <div class="effect"></div>
+        </div>
+        
+        <div class="main">
+            <i class="fa fa-download fa-2x"></i>
+            <div class="effect"></div>
+        </div>
+        
+        <div class="main">
+            <i class="fa fa-map-marker fa-2x"></i>
+            <div class="effect"></div>
+        </div>
     </div>
 </body>
 </html>
