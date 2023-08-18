@@ -33,6 +33,7 @@
             align-items: center;
             color: coral;
             z-index: 1;
+            transform: scale(1);
         }
         .effect
         {
@@ -47,10 +48,18 @@
             transition: 0.5s;
             z-index: -1;
         }
+        .main:hover
+        {
+            color: navy;
+            transform: scale(1.2);
+
+        }
         .main:hover .effect
         {
             /* transform: translate(-50%,-50%); */
             transform: scale(20);
+            
+            
         }
     </style>
 </head>
