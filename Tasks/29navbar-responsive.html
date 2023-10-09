@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid black; */
+        }
+        body
+        {
+            background: coral;
+        }
+        .nav
+        {
+            display: flex;
+            /* justify-content: center; */
+            padding: 15px 0;
+        }
+        .list
+        {
+            display: inline;
+            position: relative;
+            margin: 10px;
+        }
+        .dropdown2
+        {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+        li
+        {
+            list-style: none;
+        }
+        .list:hover .dropdown2
+        {
+            display: block;
+        }
+        .anchor
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .main
+        {
+            display: none;
+        }
+        .fa
+        {
+            padding: 15px;
+        }
+        .dropdown1
+        {
+            padding: 0 20px;
+        }
+        .main:hover .dropdown1
+        {
+            display: block;
+        }
+        @media(max-width:600px)
+        {
+            .main
+            {
+                display: block;
+            }
+            .list
+            {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        
+        <ul class="media">
+            <li class="main"><a href="" class="anchor fa fa-bars"></a></li>
+
+            <ul class="dropdown1">
+                <li class="list"><a href="" class="anchor">Home</a></li>
+                <li class="list"><a href="" class="anchor">About</a></li>
+
+                <li class="list">
+                    <a href="" class="anchor">Services</a>
+                    <ul class="dropdown2">
+                        <li class="list2"><a href="" class="anchor">Service1</a></li>
+                        <li class="list2"><a href="" class="anchor">Service2</a></li>
+                        <li class="list2"><a href="" class="anchor">Service3</a></li>
+                        <li class="list2"><a href="" class="anchor">Service4</a></li>
+                    </ul>
+                </li>
+            
+                <li class="list"><a href="" class="anchor">Contact</a></li>
+            </ul>
+        </ul>
+
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    h1
+    {
+        width: 100%;
+        font-size: 45px;
+        font-weight: lighter;
+        text-align: center;
+        padding: 20px 0;
+        letter-spacing: 3px;
+        background: white;
+    }
+    .what
+    {
+        font-weight: bold;
+    }
+    .whatstrending
+    {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+    .newarrivals
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: white;
+    }
+    .category
+    {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .category div
+    {
+        width: 25%;
+        text-align: center;
+    }
+    .flipcard
+    {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 50px;
+        flex-wrap: wrap;
+    }
+    .flipcard .main
+    {
+        width: 20%;
+
+    }
+    .main
+    {
+        height: 350px;
+        width: 250px;
+        background: grey;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        overflow: hidden;
+    }
+    .img
+    {
+        height: 250px;
+        width: 100%;
+        background: white;
+        position: relative;
+    }
+    .img::after
+    {
+        content: "QUICK VIEW";
+        color: white;
+        line-height: 60px;
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background: rgba(0,0,0,0.7);
+        transition: 0.5s;
+    }
+    .img:hover::after
+    {
+        bottom: 0;
+    }
+    .frontimg
+    {
+        background: url(Images/shirt.jpeg);
+    }
+    .frontimg2
+    {
+        background: url(Images/pants.jpeg);
+    }
+    .frontimg3
+    {
+        background: url(Images/belt.jpeg);
+    }
+    .frontimg4
+    {
+        background: url(Images/cap.jpeg);
+    }
+    .frontimg5
+    {
+        background: url(Images/shoe.jpeg);
+    }
+    .frontimg6
+    {
+        background: url(Images/watchf.png);
+    }
+    .frontimg7
+    {
+        background: url(Images/flip-flop.jpeg);
+    }
+    .frontimg8
+    {
+        background: url(Images/bag.jpeg);
+    }
+    .backimg
+    {
+        background: url(Images/shirt.jpeg);
+    }
+    .backimg2
+    {
+        background: url(Images/pants.jpeg);
+    }
+    .backimg3
+    {
+        background: url(Images/belt.jpeg);
+    }
+    .backimg4
+    {
+        background: url(Images/cap.jpeg);
+    }
+    .backimg5
+    {
+        background: url(Images/shoe.jpeg);
+    }
+    .backimg6
+    {
+        background: url(Images/watchb.png);
+    }
+    .backimg7
+    {
+        background: url(Images/flip-flop.jpeg);
+    }
+    .backimg8
+    {
+        background: url(Images/bag.jpeg);
+    }
+    .frontimg, .frontimg2, .frontimg3, .frontimg4, .frontimg5, .frontimg6, .frontimg7, .frontimg8
+    {
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        transition: 1s;
+    }
+    .backimg,.backimg2, .backimg3, .backimg4, .backimg5, .backimg6, .backimg7, .backimg8
+    {
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        backface-visibility: hidden;
+        transition: 0.8s;
+    }
+    .img:hover .backimg, .img:hover .backimg2, .img:hover .backimg3, .img:hover .backimg4, .img:hover .backimg5, .img:hover .backimg6, .img:hover .backimg7, .img:hover .backimg8
+    {
+        transform: rotateY(180deg);
+    }
+    .img:hover .frontimg, .img:hover .frontimg2, .img:hover .frontimg3, .img:hover .frontimg4, .img:hover .frontimg5, .img:hover .frontimg6, .img:hover .frontimg7, .img:hover .frontimg8
+    {
+        transform: rotateY(0deg);
+    }
+    .texts
+    {
+        height: 100px;
+        line-height: 30px;
+        background: white;
+    }
+    .news
+    {
+        position: absolute;
+        background: orangered;
+        color: white;
+        right: 0;
+        z-index: 1;
+        padding: 4px;
+    }
+    button
+    {
+        background: greenyellow;
+        border: none;
+        padding: 5px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="newarrivals">
+
+        <h1><span class="what">NEW</span> ARRIVALS</h1>
+
+        <div class="category">
+            <div class="men">MEN's</div>
+            <div class="women">WOMEN's</div>
+            <div class="footware">FOOTWARE</div>
+            <div class="bag">BAGS</div>
+        </div>
+
+        <div class="flipcard">
+            
+            <div class="main">
+                <div class="img">
+                    <div class="news">NEW</div>
+                    <div class="frontimg"></div>
+                    <div class="backimg"></div>
+                </div>
+                <div class="texts">
+                    <h3>SHIRT</h3>
+                    <h3>100$ <del>150$</del></h3>
+                    <h3><button>Add to Cart</button></h3>
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="img">
+                    <div class="news">NEW</div>
+                    <div class="frontimg2"></div>
+                    <div class="backimg2"></div>
+                </div>
+                <div class="texts">
+                    <h3>PANT</h3>
+                    <h3>100$ <del>150$</del></h3>
+                    <h3><button>Add to Cart</button></h3>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="img">
+                    <div class="news">NEW</div>
+                    <div class="frontimg3"></div>
+                    <div class="backimg3"></div>
+                </div>
+                <div class="texts">
+                    <h3>BELT</h3>
+                    <h3>100$ <del>150$</del></h3>
+                    <h3><button>Add to Cart</button></h3>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="img">
+                    <div class="news">NEW</div>
+                    <div class="frontimg4"></div>
+                    <div class="backimg4"></div>
+                </div>
+                <div class="texts">
+                    <h3>CAP</h3>
+                    <h3>100$ <del>150$</del></h3>
+                    <h3><button>Add to Cart</button></h3>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="img">
+                    <div class="news">NEW</div>
+                    <div class="frontimg5"></div>
+                    <div class="backimg5"></div>
+                </div>
+                <div class="texts">
+                    <h3>SHOES</h3>
+                    <h3>100$ <del>150$</del></h3>
+                    <h3><button>Add to Cart</button></h3>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="img">
+                    <div class="news">NEW</div>
+                    <div class="frontimg6"></div>
+                    <div class="backimg6"></div>
+                </div>
+                <div class="texts">
+                    <h3>WATCH</h3>
+                    <h3>100$ <del>150$</del></h3>
+                    <h3><button>Add to Cart</button></h3>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="img">
+                    <div class="news">NEW</div>
+                    <div class="frontimg7"></div>
+                    <div class="backimg7"></div>
+                </div>
+                <div class="texts">
+                    <h3>FLIP-FLOP</h3>
+                    <h3>100$ <del>150$</del></h3>
+                    <h3><button>Add to Cart</button></h3>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="img">
+                    <div class="news">NEW</div>
+                    <div class="frontimg8"></div>
+                    <div class="backimg8"></div>
+                </div>
+                <div class="texts">
+                    <h3>BAG</h3>
+                    <h3>100$ <del>150$</del></h3>
+                    <h3><button>Add to Cart</button></h3>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>

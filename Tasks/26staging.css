@@ -1,0 +1,179 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    color: white;
+}
+header
+{
+    height: 600px;
+    background: url(Images/StagingBG.jpeg);
+    background-size: cover;
+}
+.nav,.subheader
+{
+    height: 80px;
+    display: flex;
+    padding: 10px;
+}
+.logo,.navbar
+{
+    display: flex;
+    align-items: center;
+}
+.logo span
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: coral;
+}
+.navbar
+{
+    justify-content: center;
+}
+.contact
+{
+    text-align: right;
+    padding-top: 30px;
+}
+.nav div,.subheader div
+{
+    width: 33.33%;
+    height: inherit;
+}
+li
+{
+    list-style: none;
+}
+.main
+{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+.main::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 6px;
+    width: 0%;
+    background: coral;
+    transition: 0.5s;
+}
+.main:hover::after
+{
+    width: 100%;
+}
+a
+{
+    color: coral;
+}
+.dropdown
+{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    left: 100%;
+    height: 100px;
+    width: 100px;
+    background: rgb(163, 140, 98);
+}
+.main:hover .dropdown
+{
+    opacity: 1;
+    display: block;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.slider
+{
+    height: 440px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider span
+{
+    font-size: 35px;
+    font-weight: bold;
+    color: coral;
+}
+.slider p
+{
+    text-align: center;
+}
+button
+{
+    position: absolute;
+    top: 50%;
+    padding: 6px;
+    background: coral;
+    border: 1px solid black;
+}
+button:first-child
+{
+    left: 20%;
+}
+button:nth-child('2')
+{
+    top: 60%;
+    height: 40px;
+    width: 100px;
+}
+button:last-child
+{
+    left: 80%;
+}
+.x,.y,.z
+{
+    position: absolute;
+    top: 50%;
+}
+.x
+{
+    left: 20%;
+}
+.y
+{
+    left: 80%;
+}
+.z
+{
+    top: 60%;
+    height: 40px;
+    width: 100px;
+}
+
+.page,.discover,.social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.social .fa
+{
+    padding: 6px;
+    transition: 0.4s;
+}
+.social .fa:hover
+{
+    color: coral;
+}

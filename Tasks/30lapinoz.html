@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            border: 1px solid black;
+        }
+        .main
+        {
+            height: auto;
+        }
+        header
+        {
+            display: flex;
+            padding: 10px 0;
+        }
+        header div
+        {
+            flex-wrap: wrap;
+        }
+        li
+        {
+            list-style: none;
+            display: inline;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .logo,.font
+        {
+            width: 15%;
+            text-align: center;
+        }
+        .navbar
+        {
+            width: 70%;
+            text-align: right;
+        }
+        .content
+        {
+            padding: 20px 0;
+            text-align: center;
+        }
+        .content span
+        {
+            font-size: 40px;
+        }
+        button
+        {
+            height: 30px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        @media(max-width:800px)
+        {
+            li
+            {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <header>
+            <div class="logo">
+                <span>Lapinoz</span>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Order Online</a></li>
+                    <li><a href="">Store Locator</a></li>
+                    <li><a href="">Franchice Enquiery</a></li>
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="font">
+                <a href="" class="fa fa-sign-in"></a>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="text1"><span>ABCDEFGHIJKLMNOPQ</span></div>
+            <div class="text2"><span>RSTUVWXYZ</span></div>
+            <div class="text3">
+                <p>Order Pizza Online In Your Area</p>
+                <p>Download the app for Seamless Experience</p>
+                <button>Download Now</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

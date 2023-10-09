@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .bg
+        {
+            height: 200px;
+            width: 200px;
+            margin: 100px auto;
+            background: url(Images/LandingBg.jpg);
+            background-size: 100% 100%;
+            transition: 0.5s;
+            position: relative;
+            padding: 10px;
+            background-position: center;
+        }
+        .bg:hover
+        {
+            background-size: 110% 110%;
+        } */
+        .fg
+        {
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+        }
+        .fg img
+        {
+            height: 100%;
+            width: 100%;
+            transform: scale(1);
+            transition: 0.5s;
+            filter: brightness(70%);
+        }
+        button
+        {
+            position: absolute;
+            top: 10px;
+        }
+        .featured
+        {
+            left: 10px;
+        }
+        .sales
+        {
+            left: 100px;
+        }
+        .active
+        {
+            left: 140px;
+        }
+        .fg img:hover
+        {
+            transform: scale(1.2);
+            filter: brightness(100%);
+        }
+
+        .bg
+        {
+            height: 200px;
+            width: 200px;
+            background: url(Images/BackGround-WebSite.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            background-position: center;
+            transition: 0.71s;
+            margin: 50px auto;
+        }
+        .bg::after
+        {
+            content: "";
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            background: rgba(0,0,0,0.2);
+            transition: 0.7s;
+        }
+        .bg:hover::after
+        {
+            background: transparent;
+        }
+        .bg:hover
+        {
+            background-size: 110% 110%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="bg">
+        <button class="featured">Featured</button>
+        <button class="sales">Sales</button>
+        <button class="active">Active</button>
+    </div> -->
+
+    <div class="fg">
+        <img src="Images/BackGround-WebSite.jpg" alt="">
+        <button class="featured">Featured</button>
+        <button class="sales">Sales</button>
+        <button class="active">Active</button>
+    </div>
+
+    <div class="bg">
+        <button class="featured">Featured</button>
+        <button class="sales">Sales</button>
+        <button class="active">Active</button>
+    </div>
+</body>
+</html>

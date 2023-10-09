@@ -1,0 +1,175 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+body
+{
+    overflow-x: hidden;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+}
+.list
+{
+    text-align: center;
+    list-style: none;
+    display: inline;
+    margin: 0 150px;
+    /* position: relative; */
+}
+.nav
+{
+    width: 100%;
+    background: coral;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.dropdown1
+{
+    /* opacity: 0; */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    height: 100px;
+    width: 100px;
+    background: lightblue;
+}       
+.men,.women,.bag-s,.footware
+{
+    /* height: 20vh; */
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    /* background: lightblue;    */
+}
+.list:hover .men,.list:hover .women,.list:hover .bag-s,.list:hover .footware
+{
+    /* opacity: 1; */
+    display: block;
+}
+.main
+{
+    height: 350px;
+    width: 250px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.img
+{
+    height: 250px;
+    width: 100%;
+    background: white;
+    position: relative;
+}
+.img::after
+{
+    content: "QUICK VIEW";
+    color: white;
+    line-height: 60px;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    transition: 0.5s;
+}
+.img:hover::after
+{
+    bottom: 0;
+}
+.frontimg
+{
+    height: 250px;
+    width: 100%;
+    background: url(Images/shirt.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.backimg
+{
+    height: 250px;
+    width: 100%;
+    background: url(Images/shirt.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    backface-visibility: hidden;
+    transition: 0.8s;
+}
+.g
+{
+    background: url(Images/whatstrending1.jpg);
+}
+.b
+{
+    background: url(Images/bag.jpeg);
+}
+.f
+{
+    background: url(Images/shoe.jpeg);
+}
+.g,.f,.b
+{
+    background-size: contain;
+}
+.img:hover .backimg
+{
+    transform: rotateY(180deg);
+}
+.img:hover .frontimg
+{
+    transform: rotateY(0deg);
+}
+.text
+{
+    height: 100px;
+    line-height: 30px;
+    background: white;
+}
+.new
+{
+    position: absolute;
+    background: orangered;
+    color: white;
+    right: 0;
+    z-index: 1;
+    padding: 4px;
+}
+button
+{
+    background: greenyellow;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+}
+.div
+{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

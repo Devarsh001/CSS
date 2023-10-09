@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            border-radius: 50%;
+        }
+        .main
+        {
+            height: 250px;
+            width: 250px;
+            background: conic-gradient(from 180deg,#87CEFB, #659BDF, #4467C4, #2234A8, #00008C);
+            margin: 200px auto;
+            position: relative;
+            animation: loading 2s linear infinite;
+        }
+        .effect
+        {
+            height: 230px;
+            width: 230px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: white;
+        }
+        @keyframes loading
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="effect"></div>
+    </div>
+</body>
+</html>

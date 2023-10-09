@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            background: black;
+        }
+        .main
+        {
+            margin: 200px 0 0 500px;
+            display: flex;
+            position: relative;
+            box-shadow: 0 0 10px white;
+        }
+        .d1,.d2
+        {
+            height: 200px;
+            width: 120px;
+            background: coral;
+            border-radius: 60px;
+            position: absolute;
+            /* box-shadow: 0 0 10px white; */
+        }
+        .d1
+        {
+            transform: rotate(-45deg);
+        }
+        .d2
+        {
+            left: 55px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="d1"></div>
+        <div class="d2"></div>
+    </div>
+</body>
+</html>
